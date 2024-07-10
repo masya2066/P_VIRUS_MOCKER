@@ -10,7 +10,7 @@ async def check_file(db: Session, file: any, scan_id: str):
 
     now = datetime.datetime.now()
     is_exist = await check_text_in_file(file, "virus_exist")
-    state = "detect" if is_exist else "not detect"
+    state = "detect" if is_exist else "not detected"
 
     try:
         rows_updated = db.query(KataFile).filter(KataFile.scan_id == scan_id).update(
