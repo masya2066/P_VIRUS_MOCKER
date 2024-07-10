@@ -1,0 +1,8 @@
+database:
+  host: 127.0.0.1
+  name: virus
+  password: universal123
+  port: 5432
+  username: universal
+server:
+  port: 8081
