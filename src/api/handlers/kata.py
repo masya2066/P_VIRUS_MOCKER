@@ -19,7 +19,7 @@ async def kata_bg_checker(db, file: Coroutine[Any, Any, bytes], scan_id: str, ti
 def kata_transform_data(data: List[Dict[str, any]]) -> List[Dict[str, any]]:
     filtered_data = [
         {
-            "scanID": item["scan_id"],
+            "scanId": item["scan_id"],
             "state": item["state"]
         }
         for item in data
